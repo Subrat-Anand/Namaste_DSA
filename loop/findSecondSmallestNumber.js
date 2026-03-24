@@ -6,15 +6,15 @@ const findSecondSmallestNumber = (arr) => {
     
     for(let i=0; i<arr.length; i++){
         if(arr[i] < firstSmallest){
-            secondSmallest = firstSmallest
+            smallestNumber = firstSmallest
             firstSmallest = arr[i]
         }
-        else if(arr[i] < secondSmallest && !firstSmallest){
-            secondSmallest = arr[i]
+        else if(arr[i] < smallestNumber && !firstSmallest){
+            smallestNumber = arr[i]
         }
     }
     
-    return secondSmallest;
+    return smallestNumber;
 }
 
 let num = [4, 5, 3, 7, 8, 9 ,3];
